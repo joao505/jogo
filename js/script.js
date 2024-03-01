@@ -8,4 +8,8 @@ const jump = () => {
     }, 500);
 }
 
-document.addEventListener('keydown', jump);
+document.addEventListener('keypress', function(event) {
+    if (event.key === 'Enter') {
+        jump()
+    }
+  });
