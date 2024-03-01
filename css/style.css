@@ -11,12 +11,21 @@
     margin: 0 auto;
     position: relative;
     overflow: hidden;
+    background-color: rgb(41, 41, 184);
 }
 
+
+
+.ceu {
+    position: absolute;
+    bottom: 300px;
+    width: 40%;
+    animation: ceu  4s  infinite  linear;
+}
 .papi {
     position: absolute;
     bottom: 0;
-    width: 80px;
+    width: 60px;
     animation: pipe-animation 2s infinite linear;
 }
 
@@ -66,5 +75,15 @@
 
     100% {
         bottom: 0;
+    }
+}
+
+@keyframes ceu {
+    from{
+        right: -500px;
+    }
+
+    to{
+        right: 100%;
     }
 }
